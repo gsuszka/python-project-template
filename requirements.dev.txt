@@ -1,5 +1,0 @@
-mypy
-mypy-extensions
-black
-autoflake
-pylint
