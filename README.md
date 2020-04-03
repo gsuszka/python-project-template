@@ -1,6 +1,6 @@
 # Sample python project
 
-Python project template with create script with basic dev packages.
+Python project template with creation script and basic dev packages.
 
 ## Usage
 
@@ -16,15 +16,15 @@ It will run `poetry init` and add basic packages needed to develop typed python 
 
 ### Makefile
 
-Makefile by default shows help, which is read by comments in all included makefiles.
-The format for help is shown below.
+Makefile by default shows help from all makefiles in project (Makefile, makefiles/*.mk).
+The template for help is below.
 
 ```makefile
 [TASK NAME]: ## [HELP]
     [TASK COMMANDS]
 ```
 
-If you want to get help, run:
+If you want to view help, run:
 
 ```shell
 make help
