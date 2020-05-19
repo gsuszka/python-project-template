@@ -50,7 +50,7 @@ function install_deps() {
     local packages=$(echo ${packages} ${other_packages} | tr ' ' '\n' | sort | uniq)
     if [[ ! -z ${packages} ]]; then
         info "Installing ${packages}"
-        poetry add ${dev_flag} --allow-prereleases ${packages}
+        poetry add ${dev_flag} ${packages}
     else
         warning "No packages to install"
     fi
@@ -71,9 +71,8 @@ function create_project() {
     check_pyproject
     init_poetry
     install_deps ${SCRIPT_DIR}/../requirements.dev.txt dev
-    install_deps ${SCRIPT_DIR}/../requirements.
+    install_deps ${SCRIPT_DIR}/../requirements.txt
     create_source_dir 
-    warning "Now you can run: \npoetry shell\n\tand then\nsource .env"
 }
 
 create_project

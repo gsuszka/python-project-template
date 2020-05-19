@@ -1,4 +1,3 @@
 mypy 
-black 
-autoflake 
-pylint
+black
+rope
