@@ -1,6 +1,6 @@
-# Sample python project
+# Python project template
 
-Python project template with creation script and basic dev packages.
+A python project template with creation script and basic dev packages.
 
 ## Usage
 
